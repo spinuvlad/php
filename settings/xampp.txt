@@ -1,0 +1,30 @@
+Install XAMPP
+
+XAMPP Control Panel > Start Apache/phpMyAdmin/MySQL
+
+In Explorer > htdocs , creaza folderul pentru site - de ex. "mysite" iar in el un file "index.php" cu un cod executabil php
+
+Chrome > localhost/mysite > trebuie sa se vada codul executat
+
+Stop Apache din XAMPP Control Panel
+
+C:\xampp/apache/conf/extra/httpd-vhosts.conf
+copy/paste/save:
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@mysite
+    DocumentRoot "C:/xampp/htdocs/mysite"
+    ServerName mysite
+    ServerAlias www.mysite
+</VirtualHost>
+
+c:/Windows/System32/drivers/etc/hosts
+copy/paste/save: (cu drepturi de admin)
+
+127.0.0.1 www.mysite
+127.0.0.1 mysite
+
+Start Apache din XAMPP Control Panel
+
+Chrome > mysite/ - deschide codul php executat
+
